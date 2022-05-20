@@ -1,5 +1,4 @@
-<?PHP
-declare(strict_types=1);
+<?php
 /**
  * @category MyApp
  * @package MyApp_Migration
@@ -7,11 +6,16 @@ declare(strict_types=1);
  * @copyright Copyright (c) 2022 Scandiweb, Inc (https://scandiweb.com)
  * @license http://opensource.org/licenses/OSL-3.0 The Open Software License 3.0 (OSL-3.0)
  */
+
+declare(strict_types=1);
+
 namespace MyApp\Migration\Setup\Patch\Data;
+
 use Magento\Framework\Setup\Patch\DataPatchInterface;
 use Magento\Framework\Exception\NoSuchEntityException;
 use Scandiweb\Migration\Helper\Cms\CmsFileParser;
 use Scandiweb\Migration\Helper\MediaMigration;
+
 /**
  * Class CreateLionBlock
  * @package MyApp\Migration\Setup\Patch\Data
@@ -22,10 +26,12 @@ class CreateLionBlock implements DataPatchInterface
     const MEDIA_FILES = [
         'blocks/lions/lion.jpeg'
     ];
+
     /**
      * @var CmsFileParser
      */
     protected CmsFileParser $cmsHelper;
+
     /**
      * @param CmsFileParser $cmsHelper
      * @param MediaMigration $mediaMigration
@@ -35,6 +41,7 @@ class CreateLionBlock implements DataPatchInterface
         $this->cmsHelper = $cmsHelper;
         $this->mediaMigration = $mediaMigration;
     }
+
     /**
      * @return void
      */
@@ -49,6 +56,7 @@ class CreateLionBlock implements DataPatchInterface
             'cms'
         );
     }
+
     /**
      * @return array
      */
@@ -56,6 +64,7 @@ class CreateLionBlock implements DataPatchInterface
     {
         return [];
     }
+
     /**
      * @return array
      */
