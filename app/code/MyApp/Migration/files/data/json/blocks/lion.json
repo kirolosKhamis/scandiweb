@@ -1,0 +1,9 @@
+{
+    "lion": {
+        "title": "Lion Block",
+        "identifier": "lion",
+        "content": "app/code/MyApp/Migration/files/data/html/blocks/lion.html",
+        "is_active": 1,
+        "stores": 0
+    }
+}

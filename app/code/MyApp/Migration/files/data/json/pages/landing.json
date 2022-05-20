@@ -1,0 +1,9 @@
+{
+    "lion": {
+        "title": "Landing Page",
+        "identifier": "landing",
+        "content": "app/code/MyApp/Migration/files/data/html/pages/landing.html",
+        "is_active": 1,
+        "stores": 0
+    }
+}
